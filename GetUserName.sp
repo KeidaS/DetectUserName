@@ -19,7 +19,7 @@ public void DetectName(client)
 {
 	decl String:nick[64];
 	GetClientName(client, nick, sizeof(nick));
-	if (StrContains(nick, "hermandadfenix.es", false) == true) 
+	if (StrContains(nick, "hermandadfenix.es", false)!=-1) 
 	{
 		AddUserFlags(client, Admin_Custom6);
 	}
