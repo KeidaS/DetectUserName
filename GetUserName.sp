@@ -22,14 +22,13 @@ public void DetectName(client)
 	if (StrContains(nick, "hermandadfenix.es", false)!=-1) 
 	{
 		new bits = GetUserFlagBits(client);
-		AdminFlag[] flags = new AdminFlag[1000];
-		FlagBitsToArray(bits, flags, 1000);
+		AdminFlag[] flags = new AdminFlag[21];
+		int numberOfFlags = FlagBitsToArray(bits, flags, 21);
 		int i = 0;
-		int size = GetArraySize;
-		for (i = 0; i < 10; i++) {
-
-		}
 		AddUserFlags(client, Admin_Custom6);
+		for (i = 0; i < numberOfFlags; i++) {
+			AddUserFlags(client, flags[i]);
+		}
 	}
 }
 
