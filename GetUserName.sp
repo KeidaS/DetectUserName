@@ -23,7 +23,8 @@ public void DetectName(client)
     {
         int UserBits = GetUserFlagBits(client);
         //int FinalBit = GetUserAccessValue("t") + UserBits;
-        SetUserFlagBits(client, UserBits+1048576);
+        AddUserFlags(client, Admin_Custom6);
+        SetUserFlagBits(client, UserBits + 1048576);
     }
 }
 
