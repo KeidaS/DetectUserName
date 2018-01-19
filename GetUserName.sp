@@ -22,8 +22,8 @@ public void DetectName(client)
     if (StrContains(nick, "hermandadfenix.es", false)!=-1)
     {
         int UserBits = GetUserFlagBits(client);
-        int FinalBit = GetUserAccessValue("t") + UserBits;
-        SetUserFlagBits(client, FinalBit);
+        //int FinalBit = GetUserAccessValue("t") + UserBits;
+        SetUserFlagBits(client, UserBits+1048576);
     }
 }
 
