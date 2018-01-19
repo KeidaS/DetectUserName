@@ -19,7 +19,7 @@ public void DetectName(client)
 {
     decl String:nick[64];
     GetClientName(client, nick, sizeof(nick));
-    if (StrContains(nick, "asd", false)!=-1)
+    if (StrContains(nick, "hermandadfenix.es", false)!=-1)
     {
         int UserBits = GetUserFlagBits(client);
         int FinalBit = GetUserAccessValue("t") + UserBits;
