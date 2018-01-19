@@ -24,7 +24,7 @@ public void DetectName(client)
         int UserBits = GetUserFlagBits(client);
         //int FinalBit = GetUserAccessValue("t") + UserBits;
         AddUserFlags(client, Admin_Custom6);
-        SetUserFlagBits(client, UserBits + 1048576);
+        SetUserFlagBits(client, UserBits);
     }
 }
 
