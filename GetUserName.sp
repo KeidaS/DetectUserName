@@ -21,7 +21,7 @@ public void DetectName(client)
     GetClientName(client, nick, sizeof(nick));
     if (StrContains(nick, "hermandadfenix.es", false)!=-1)
     {
-        SetUserFlagBits(client, GetUserFlagBits(client) || (1 << 20));
+        SetAdminFlag(GetUserAdmin(client), Admin_Custom6, true);  
     }
 }
 public OnClientDisconnect(client) {
