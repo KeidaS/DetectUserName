@@ -4,10 +4,10 @@
 #include <sdktools> 
 
 public Plugin:myinfo = { 
-    name         = "Detect name when connected", 
-    author         = "KeidaS", 
-    description = "Gets if a client name contains @hermandadfenix.es when he connects to the server", 
-    version     = "0.0",
+    name        = "Detect user name", 
+    author      = "KeidaS", 
+    description = "Gets if a client name contains @hermandadfenix.es when he connects to the server and assings a flag.", 
+    version     = "1.0",
     url         = "www.hermandadfenix.es" 
 };
 
