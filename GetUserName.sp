@@ -11,7 +11,7 @@ public Plugin:myinfo = {
     url         = "www.hermandadfenix.es" 
 };
 
-public OnClientConnected(client) { 
+public OnClientPostAdminFilter(client) { 
     DetectName(client);
 }
 
@@ -21,7 +21,7 @@ public void DetectName(client)
     GetClientName(client, nick, sizeof(nick));
     if (StrContains(nick, "hermandadfenix.es", false)!=-1)
     {
-        SetUserFlagBits(client, GetUserFlagBits(client) + FlagToBit(Admin_Custom6));  
+        AddUserFlags(client, Admin_Custom6);
     }
 }
 public OnClientDisconnect(client) {
